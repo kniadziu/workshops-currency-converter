@@ -11,8 +11,8 @@ function Calculator() {
           <select>
             <option value="USD">USD</option>
             <option value="PLN">PLN</option>
-            <option value="PLN">GBP</option>
-            <option value="PLN">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="EUR">EUR</option>
           </select>
         </div>
         <div>
@@ -20,8 +20,8 @@ function Calculator() {
           <select>
             <option value="USD">USD</option>
             <option value="PLN">PLN</option>
-            <option value="PLN">GBP</option>
-            <option value="PLN">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="EUR">EUR</option>
           </select>
         </div>
       </form>
