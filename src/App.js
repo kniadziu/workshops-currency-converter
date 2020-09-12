@@ -6,7 +6,8 @@ const day = 'Saturday';
 function Button(props) { // function Button({ label, color })
   // const { label } = props;
   return (
-    <button>{props.label}</button>
+    // <button>{props.label}</button>
+    <button>{props.children}</button>
   );
 }
 Button.defaultProps = {
@@ -19,11 +20,23 @@ function App() {
     <div className="App">
       <p>Hello!!</p>
       <p>{day}</p>
-      <Button label="Don't click me" color="blue" />
-      <Button label="Click me!" />
-      <Button />
+      <Button color="blue">Don't click me</Button>
+      <Button>Click me!</Button>
+      <Button>Third button</Button>
     </div>
   );
 }
+
+//  <App>
+//     <Header>
+//       <Menu></Menu>
+//     </Header>
+//     <Main>
+//       <div></div>
+//       <div></div>
+//       <div></div>
+//     </Main>
+//     <Footer></Footer>
+//   </App>
 
 export default App;
