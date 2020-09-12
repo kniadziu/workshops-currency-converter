@@ -1,18 +1,8 @@
 import React from 'react';
 import './App.css';
+import { Button } from './components/Button';
 
 const day = 'Saturday';
-
-function Button(props) { // function Button({ label, color })
-  // const { label } = props;
-  return (
-    // <button>{props.label}</button>
-    <button>{props.children}</button>
-  );
-}
-Button.defaultProps = {
-  label: 'Enter label for button'
-}
 
 function App() {
   // JSX
