@@ -15,8 +15,8 @@ Button.defaultProps = {
 export default Button;
 
 // App.js
-{/* <div>
-  <span>Tekst</span>
-  <Button type="button">Cokolwiek</Button>
-  <Button>Cokolwiek 2</Button>
-</div> */}
+//<div>
+//  <span>Tekst</span>
+//  <Button type="button">Cokolwiek</Button>
+//  <Button>Cokolwiek 2</Button>
+//</div>
