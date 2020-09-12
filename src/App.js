@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Button } from './components/Button';
+import { Calculator } from './components/Calculator';
 
 const day = 'Saturday';
 
@@ -10,9 +11,7 @@ function App() {
     <div className="App">
       <p>Hello!!</p>
       <p>{day}</p>
-      <Button color="blue">Don't click me</Button>
-      <Button>Click me!</Button>
-      <Button>Third button</Button>
+      <Calculator />
     </div>
   );
 }
