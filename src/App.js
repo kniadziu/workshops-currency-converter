@@ -3,10 +3,14 @@ import './App.css';
 
 const day = 'Saturday';
 
-function Button() {
+function Button(props) { // function Button({ label, color })
+  // const { label } = props;
   return (
-    <button>Click me!!!</button>
+    <button>{props.label}</button>
   );
+}
+Button.defaultProps = {
+  label: 'Enter label for button'
 }
 
 function App() {
@@ -15,8 +19,8 @@ function App() {
     <div className="App">
       <p>Hello!!</p>
       <p>{day}</p>
-      <Button />
-      <Button />
+      <Button label="Don't click me" color="blue" />
+      <Button label="Click me!" />
       <Button />
     </div>
   );
