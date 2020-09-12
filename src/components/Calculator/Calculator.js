@@ -22,12 +22,17 @@ function Select({ value, setCurrency }) {
 }
 
 function Calculator() {
+  const [result, setResult] = useState(0);
   const [amount, setAmount] = useState(0);
   const [currencyFrom, setCurrencyFrom] = useState('PLN');
   const [currencyTo, setCurrencyTo] = useState('USD');
   const handleSubmit = (event) => {
     event.preventDefault();
-    
+    fetch(`https://api.ratesapi.io/api/latest?base=${currencyFrom}`)
+    .then(response => response.json())
+    .then(data => {
+      setResult(amount * data.rates[currencyTo]);
+    });
   }
   return (
     <form onSubmit={handleSubmit}>
@@ -42,7 +47,7 @@ function Calculator() {
         <span>To:</span>
         <Select value={currencyTo} setCurrency={setCurrencyTo} />
       </div>
-      <div>Result: {amount}</div>
+      <div>Result: {result}</div>
       <Button type="submit">Send</Button>
     </form>
   );
